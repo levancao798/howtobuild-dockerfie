@@ -3,3 +3,16 @@ multi stage
 secure
 fast
 using env
+
+STEP-1: Use a smaller base image
+  use alpine images
+STEP-2: Combine all the instructions into a single line
+  reducing LOC
+STEP-3: Avoid installing debugging tools like vim, curl, nano, etc
+STEP-4: Remove unnecessary files/packages
+  Adding — no-install-recommends to apt-get install can drastically bring down 
+  the size of the image by avoiding installing packages that aren’t required to run the image.
+  Add rm -rf /var/lib/apt/lists/* at the end of install statement to clean up 
+  after install packages. This approach is for any package that you don't need it permanently.
+
+
