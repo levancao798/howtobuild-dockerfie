@@ -15,4 +15,7 @@ STEP-4: Remove unnecessary files/packages
   Add rm -rf /var/lib/apt/lists/* at the end of install statement to clean up 
   after install packages. This approach is for any package that you don't need it permanently.
 
-
+Must be have comment
+Automatic
+Fit almost 
+Full dependencies
