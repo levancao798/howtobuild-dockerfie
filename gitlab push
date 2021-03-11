@@ -1,0 +1,7 @@
+cd folder
+git init
+git remote add origin <remote> 
+git pull <remote> <branch>
+git add .
+git commit -m "commit"
+git push origin <branch>
