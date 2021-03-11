@@ -1,0 +1,16 @@
+1. Clone git repository
+cd ~
+git clone git@git.eway.vn:sysadmins/wordpress-5.5-php7.2-fpm.git
+2. Choose php version
+vim Dockerfile
+FROM wordpress:5.5-php7.2-fpm
+3. Checkout, Commit & Push with new branch
+git checkout -b dev-wordpress5.5
+git add .
+git commit -m "C1 - build from image wordpress5.5"
+git push origin dev-wordpress5.5
+4. Merge branch dev-wordpress5.5 into master
+git checkout master
+git merge dev-wordpress5.5
+git push origin master
+Done !
