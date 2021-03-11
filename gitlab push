@@ -1,7 +1,11 @@
-cd folder
+rm -rf .git
+rm README.md 
 git init
-git remote add origin <remote> 
-git pull <remote> <branch>
+git config --global user.name "caolv"
+git config --global user.email "caolv@eway.vn"
+git remote add origin <repo>
+git pull <repo> <branch>
 git add .
-git commit -m "commit"
+git status
+git commit -m "add new file"
 git push origin <branch>
